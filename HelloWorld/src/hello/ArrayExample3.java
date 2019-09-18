@@ -16,7 +16,7 @@ public static void main(String[] args) {
 		for(int j = 0; j < intAry[i].length; j++) {
 			sum+=intAry[i][j];
 		}
-		System.out.println("=>[" +i + "]=> 합:" + sum +);
+		System.out.println("=>[" + i + "]=> 합:" + sum );
 	}
 	
 //	for(int i = 0; i < intAry.length; i++) {
