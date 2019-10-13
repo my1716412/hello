@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//var day = 365; //정수
+	//var year = "2019"; //문자
+	//var test = 0.123123 //실수
+	//document.write("<table border='1'><tr><td>111</td></tr></table>");
+	
+	document.write("<table border='1'>"); //테이블 생성 시작
+	document.write("<tr>");
+	for(var i=2 ; i<=9 ; i++){
+		//구구단 헤더 출력
+		document.write("<th>" + i + "단</th>");
+	}
+	document.write("</tr>")
+	
+	for(var j=1 ; j<=9 ; j++){
+		//구구단 내용 출력
+		document.write("<tr>")
+		for(var k=2 ; k<=9 ; k++){
+			if((j*k) % 3 == 0){
+				document.write("<td>3의배수입니다.</td>")
+			}else{
+				document.write("<td>" + k + " * " + j + " = " + (j * k) + "</td>");
+			}
+		}
+		document.write("</tr>")
+	}
+	
+	document.write("</table>"); //테이블 생성 종료
+</script>
+</head>
+<body>
+
+</body>
+</html>
